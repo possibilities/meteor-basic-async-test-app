@@ -27,7 +27,7 @@ if (Meteor.is_server) {
       setTimeout(function() {
 
         // Return the results
-        fut.ret(message + " (delayed for 3 seconds)");
+        fut['return'](message + " (delayed for 3 seconds)");
 
       }, 3 * 1000);
 
